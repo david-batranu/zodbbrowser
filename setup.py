@@ -69,39 +69,7 @@ setup(
     zip_safe=False,
     package_dir={'': 'src'},
     install_requires=[
-        "ZODB3",
-        "ZEO",
-        "zope.app.pagetemplate",
-        "zope.app.publication",
-        "zope.component",
-        "zope.interface",
-        "zope.location",
-        "zope.publisher",
-        "zope.security",
-        "zope.traversing",
-        "zope.cachedescriptors",
-        # dependencies just for the test suite
-        "zope.app.container",
-        "zope.app.testing",
-        "zope.testbrowser >= 5.1",
-        "lxml",
-        "cssselect",
-        "unittest2",
-        # dependencies just for the standalone app
-        "zope.app.authentication",
-        "zope.app.component",
-        "zope.securitypolicy",
-        "zope.app.server",
-        "zope.app.session", # purely BBB for old Data.fs'es
-        "zope.app.zcmlfiles",
-        "zope.server",
-        "zope.error",
-        "zope.exceptions",
-        "zope.session",
-        # dependencies that easy_install pulls in via setuptools extras
-        # but that are dropped when you do pip install, *sigh*
-        "zope.hookable",
-        "RestrictedPython",
+
         ],
     extras_require=dict(
         test=[

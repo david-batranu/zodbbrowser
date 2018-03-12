@@ -34,4 +34,6 @@
       permission="zope2.ViewManagementScreens"
       />
 
+  <page name="recurse_zodb_size" class=".get_sizes.RecurseSizeView" for="*" permission="zope2.View" />
+
 </configure>
