@@ -14,9 +14,8 @@ def zodb_objects_by_size(context):
     from zodbbrowser.history import ZodbObjectHistory
     from collections import Counter
 
-    def recurse(context, results):
+    def recurse(obj, results):
         # Retrieve state pickle from ZODB, get length
-        obj = context.aq_inner.aq_self
         history = ZodbObjectHistory(obj)
         try:
             pstate = history.loadStatePickle()
